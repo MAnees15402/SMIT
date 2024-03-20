@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+</head>
+
+<body>
+    <h2 style="color: blue;"> Welcom to HTML in SMIT in Tamplates</h2>
+    <p style="color: brown; background-color: burlywood;">{{bdata}}</p>
+    {%for n in ls%}
+    <div>{{forloop.counter}}{{n}}</div>
+    {% endfor %}
+    
+<br><br>
+
+    <table border="1px" cellpadding="10">
+        <tr>
+            <th>Name</th>
+            <th>Phone Number</th>
+        </tr>
+        {%for d in student %}
+        <tr>
+            <td>{{d.name}}</td>
+            <td>{{d.phone}}</td>
+        </tr>
+        {%endfor%}
+    </table>
+    <br><br>
+
+{% if number|length > 0%}
+    {%for i in number%}
+    {%if i > 20 %}
+    <div>{{i}}</div>
+        {%endif%}
+    {%endfor%}
+{% else %}
+no data is ::::
+   
+{%endif%}
+</body>
+</html>
