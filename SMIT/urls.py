@@ -21,8 +21,9 @@ from SMIT import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('about/', views.about_us),
-    path('', views.homePage),
+    path('', views.home),
     path('course/', views.Course),
-    path('course/<courseid>/', views.courseDetails),  # Corrected the function name
+    path('projact/', views.projact),
+    path('course/', views.contact), # Corrected the function name
 ]
 
