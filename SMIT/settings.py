@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "new",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -54,7 +55,7 @@ ROOT_URLCONF = "SMIT.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR,'TAMPLATES'],
+        "DIRS": [BASE_DIR,'tamplates'],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
