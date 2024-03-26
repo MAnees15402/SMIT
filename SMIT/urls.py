@@ -18,6 +18,11 @@ from django.contrib import admin
 from django.urls import path,include
 from SMIT import views
 
+admin.site.site_header = 'Developer Anees'
+admin.site.site_title = ' Welcom to M.Anees Dashboard'
+admin.site.index_title = 'Welcom to Portal'
+
+
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('', views.home, name='home'),
